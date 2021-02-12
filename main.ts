@@ -1,8 +1,8 @@
 let i = 0;
 let time = 3000;
 let slideTimer;
-const slideshowA = <HTMLElement> document.getElementsByClassName('slideshow-a')[0] 
-const slideshowB = <HTMLElement> document.getElementsByClassName('slideshow-b')[0] 
+const slideshowA = document.getElementsByClassName('slideshow-a')[0] as HTMLElement
+const slideshowB = document.getElementsByClassName('slideshow-b')[0] as HTMLElement
 let slides = slideshowA.getElementsByClassName('slide');
 let slidesB = slideshowB.getElementsByClassName('slide');
 let slideDots = document.getElementsByClassName('dot');
