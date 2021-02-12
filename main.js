@@ -27,7 +27,9 @@ function changeSlide(n, manual) {
     else
         i = i < slides.length - 1 ? i + 1 : 0;
     console.log(typeof (slideshowA));
-    slideshowA.style.transform = "translateX(" + (150 - i * 100) + "vw)";
+    if (typeof slideshowA.style !== undefined) {
+        slideshowA.style.transform = "translateX(" + (150 - i * 100) + "vw)";
+    }
     slideshowB.style.transform = "translateX(" + (-150 + i * 100) + "vw)";
     slideDots[i].classList.add('dot-active');
     slideTimer = setTimeout('changeSlide()', time);

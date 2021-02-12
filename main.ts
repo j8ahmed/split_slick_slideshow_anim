@@ -22,8 +22,7 @@ function changeSlide(n = i, manual = false){
     else if(n > slides.length -1) i = 0
     else i = n
   }else i = i < slides.length - 1 ? i + 1 : 0
-
-    console.log(typeof(slideshowA) )
+    
     slideshowA.style.transform = `translateX(${150 - i * 100}vw)`
     slideshowB.style.transform = `translateX(${-150 + i * 100}vw)`
 
